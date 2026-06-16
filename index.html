@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVwatch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<!-- Top Nav -->
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="/">
+      <img
+              src="assets/evwatchlogo.svg"
+              alt="EVwatch"
+              class="brand__logo"
+      />
+    </a>
+
+
+    <nav class="nav">
+      <a class="nav__link is-active" href="#">HOME</a>
+      <a class="nav__link" href="#">NEWS</a>
+      <a class="nav__link" href="#">VIDEOS</a>
+      <a class="nav__link" href="#">RESEARCH</a>
+      <a class="nav__link" href="#">CONTACTS</a>
+    </nav>
+
+    <div class="topbar__right">
+      <div class="lang">
+        <a class="lang__item is-active" href="#">EN</a>
+        <span class="lang__sep">|</span>
+        <a class="lang__item" href="#">DE</a>
+        <span class="lang__sep">|</span>
+        <a class="lang__item" href="#">TR</a>
+        <span class="lang__sep">|</span>
+        <a class="lang__item" href="#">AR</a>
+      </div>
+
+      <div class="search">
+        <input class="search__input" type="search" placeholder="" aria-label="Search" />
+        <button class="search__btn" aria-label="Search">
+          <!-- simple magnifier -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M16.3 16.3 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- 你可以把 map 当成背景图，或者直接用 img。这里用背景图方式 -->
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__left">
+      <h1 class="hero__title">
+        Tracking China’s EV Industry,<br />
+        Connecting Global Markets
+      </h1>
+
+      <a class="btn" href="#">ABOUT US</a>
+    </div>
+
+    <div class="hero__right">
+      <!-- 人物 PNG（可带透明背景） -->
+      <img class="hero__person" src="assets/person.png" alt="Person" />
+    </div>
+  </div>
+</section>
+
+<main class="container content">
+  <!-- Who are we -->
+  <section class="section">
+    <h2 class="section__title">Who are we?</h2>
+
+    <div class="card card--wide">
+      <div class="card__body">
+        <p class="lead">
+          An independent international media platform delivering news, product experience, and market insight on China’s electric vehicle industry, with a focus on the Middle East and global expansion.
+        </p>
+        <p class="muted">Published in Arabic, English, German, and Turkish.</p>
+      </div>
+
+      <div class="card__media">
+        <img class="car" src="assets/car.png" alt="Car" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our channels -->
+  <section class="section">
+    <h2 class="section__title">Our channels</h2>
+
+    <div class="grid">
+      <article class="tile">
+        <h3 class="tile__title">English</h3>
+        <p class="tile__meta">produced in Berlin</p>
+      </article>
+
+      <article class="tile">
+        <h3 class="tile__title">Türkçe</h3>
+        <p class="tile__meta">İstanbul’da üretilmektedir</p>
+      </article>
+
+      <article class="tile">
+        <h3 class="tile__title">Deutsch</h3>
+        <p class="tile__meta">produziert in Berlin</p>
+      </article>
+
+      <article class="tile">
+        <h3 class="tile__title">Chinese</h3>
+        <p class="tile__meta">在柏林制作</p>
+      </article>
+
+      <article class="tile">
+        <h3 class="tile__title">Arabic</h3>
+        <p class="tile__meta">produced in Berlin</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© EVwatch</span>
+  </div>
+</footer>
+</body>
+</html>
