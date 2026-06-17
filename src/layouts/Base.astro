@@ -1,0 +1,54 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = 'EVwatch', description = "Tracking China's EV Industry, Connecting Global Markets" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner container">
+      <a href="/" class="brand">
+        <img src="/assets/evwatchlogo.svg" alt="EVwatch" class="brand__logo" />
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav__link">HOME</a>
+        <a href="/news" class="nav__link">NEWS</a>
+        <a href="/videos" class="nav__link">VIDEOS</a>
+        <a href="/research" class="nav__link">RESEARCH</a>
+        <a href="/contacts" class="nav__link">CONTACTS</a>
+      </nav>
+      <div class="topbar__right">
+        <div class="lang">
+          <a href="#" class="lang__item is-active">EN</a>
+          <span class="lang__sep">|</span>
+          <a href="#" class="lang__item">DE</a>
+          <span class="lang__sep">|</span>
+          <a href="#" class="lang__item">TR</a>
+          <span class="lang__sep">|</span>
+          <a href="#" class="lang__item">AR</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <span>© EVwatch</span>
+    </div>
+  </footer>
+</body>
+</html>
